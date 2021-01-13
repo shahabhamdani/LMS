@@ -48,10 +48,10 @@ form{
 			<form action="/dashboard">
 				
             	</div>
-				<input type="submit" class="btn" value="Login">
+				<input type="submit" class="btn" value="Borrow Book">
 				<br>
 				<br>
-				<input type="submit" class="btn" value="Login">
+				<input type="submit" class="btn" value="Manage Books">
 
             </form>
         </div>
