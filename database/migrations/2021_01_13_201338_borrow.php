@@ -13,13 +13,6 @@ class Borrow extends Migration
      */
     public function up()
     {
-        Schema::create('borrow', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('reg_num');
-            $table->string('category');
-            $table->date('date')
-        });
     }
 
     /**
