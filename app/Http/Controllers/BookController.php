@@ -25,6 +25,7 @@ class BookController extends Controller
         $book->save();
         return redirect()->back();
     }
+
     public function update_form($id)
     {
         $book = Book::find($id);
