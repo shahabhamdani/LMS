@@ -22,15 +22,19 @@ body{
 
 .login-content{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: around;
 	align-items: center;
 	text-align: center;
+
+		position: absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+
 }
 
 form{
 	width: 360px;
-	margin-top: 15%;
-	margin-left: 35%;
 }
 
 
@@ -46,7 +50,6 @@ form{
 }
 
 .login-content .input-div{
-	position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
     margin: 25px 0;
@@ -175,10 +178,11 @@ a:hover{
 }
 
 	.login-content{
+
 		justify-content: center;
+		
 	}
         </style>
-
 
 </head>
 <body>
