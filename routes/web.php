@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 
-
 Route::get('/dashboard', function () {
     return view('books/layout');
 });
@@ -27,6 +26,7 @@ Route::get('/dashboard', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
 
 
 Route::get('/dashboard', 'App\Http\Controllers\BookController@index')->name('book');
