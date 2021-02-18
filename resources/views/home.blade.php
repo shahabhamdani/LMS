@@ -78,10 +78,14 @@
 
 <body>
 		<div class="login-content">
-			<form action="/dashboard">
+			<form action="/borrow">
 				<input type="submit" class="btn one" value="Borrow Book">
+
 				<br>
 				<br>
+			
+            </form>
+			<form action="/manage">
 				<input type="submit" class="btn two" value="Manage Books">
             </form>
         </div>

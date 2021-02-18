@@ -28,12 +28,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
 
-
-Route::get('/book', 'App\Http\Controllers\BookController@index')->name('book');
+Route::get('/manage', 'App\Http\Controllers\BookController@index')->name('book');
+Route::get('/borrow', 'App\Http\Controllers\BookController@index')->name('book');
 Route::post('/create', 'App\Http\Controllers\BookController@create')->name('create');
 Route::get('/updateform/{id}', 'App\Http\Controllers\BookController@update_form')->name('updateform');
 Route::get('/update/{id}', 'App\Http\Controllers\BookController@update')->name('update');
