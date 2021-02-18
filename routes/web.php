@@ -19,12 +19,17 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', function () {
-    return view('books/layout');
+    return view('dashboard');
 });
 
 
 Route::get('/home', function () {
     return view('home');
+});
+
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
 
