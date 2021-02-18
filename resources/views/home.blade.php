@@ -7,26 +7,23 @@
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <style>
-
-
-
-form{
-	width: 360px;
-	margin-top: 25%;
+	
+<style>
+.login-content{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
 }
 
-
 .btn{
-	display: block;
-	width: 100%;
-	height: 90px;
-	border-radius: 25px;
-	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
+	display: block;
 	font-size: 1.2rem;
+	width: 300px;
+	height: 50px;
+	border-radius: 15px;
+	background-image: linear-gradient(to right, #32be8f, #38d39f);
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
@@ -34,35 +31,57 @@ form{
 	transition: .5s;
 }
 .btn:hover{
-	background-position: right;
+	transform:translateY(-3px);
+	box-shadow: 0px 7px 7px 7px rgb(0, 0, 0,0.2);
+	transition-duration: .5s;
 }
 
+.one{
+	animation: moveInLeft 1.5s;
+}
 
-        </style>
+.two{
+	animation: moveInRight 1.5s;
+}
 
+@keyframes moveInLeft{
+	0%{
+		opacity:0;
+		transform:translateX(-50%);
+	}
+	80%{
+		transform:translateX(3%)
+	}
+	100%{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
 
+@keyframes moveInRight{
+	0%{
+		opacity:0;
+		transform:translateX(50%);
+	}
+	80%{
+		transform:translateX(-3%)
+	}
+	100%{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+</style>
 </head>
+
 <body>
-		
 		<div class="login-content">
 			<form action="/dashboard">
-				
-            	</div>
-				<input type="submit" class="btn" value="Borrow Book">
+				<input type="submit" class="btn one" value="Borrow Book">
 				<br>
 				<br>
-				<input type="submit" class="btn" value="Manage Books">
-
+				<input type="submit" class="btn two" value="Manage Books">
             </form>
         </div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
