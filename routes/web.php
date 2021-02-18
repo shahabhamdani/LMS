@@ -13,28 +13,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+
 Route::get('/', function () {
     return view('login');
 });
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
 
 Route::get('/home', function () {
     return view('home');
 });
 
-
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
 
-
-Route::get('/dashboard', 'App\Http\Controllers\BookController@index')->name('book');
+//Route::get('/dashboard', 'App\Http\Controllers\BookController@index')->name('book');
 Route::post('/create', 'App\Http\Controllers\BookController@create')->name('create');
 Route::get('/updateform/{id}', 'App\Http\Controllers\BookController@update_form')->name('updateform');
 Route::get('/update/{id}', 'App\Http\Controllers\BookController@update')->name('update');
