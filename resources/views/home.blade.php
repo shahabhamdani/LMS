@@ -29,6 +29,8 @@
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: .5s;
+
+	backface-visibility: hidden;
 }
 .btn:hover{
 	transform:translateY(-3px);
