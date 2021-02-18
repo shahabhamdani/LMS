@@ -188,9 +188,9 @@ a:hover{
 <body>
 		
 		<div class="login-content">
-			<form action="/dashboard">
+			<form action="/home">
 				<img src='/img/avatar.svg' alt="avatar">
-				<h2 class="title">Welcome</h2>
+				<h2 class="title">WELCOME</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
